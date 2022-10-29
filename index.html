@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今天星期四吗</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      #app {
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size: 16vw;
+        font-family: "Noto Serif CJK SC", "Noto Serif CJK",
+          "Source Han Serif SC", "Source Han Serif", source-han-serif-sc, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">今天星期四吗</div>
+    <script>
+      let message;
+      let time_now = new Date();
+      switch (time_now.getDay()) {
+        case 0:
+          message = "今天周日！";
+          break;
+        case 1:
+          message = "好想谈恋爱、";
+          break;
+        case 2:
+          message = "后天星期四！";
+          break;
+        case 3:
+          message = "明天星期四！";
+          break;
+        case 4:
+          message = "今天星期四！";
+          break;
+        case 5:
+          message = "今天周五！";
+          break;
+        case 6:
+          message = "今天周六！";
+          break;
+        case 7:
+          message = "今天周日！";
+          break;
+        default:
+          message = "今天星期四吗";
+          break;
+      }
+      console.log(message);
+      document.getElementById("app").innerHTML = message;
+      let time_next = new Date().setHours(24, 0, 1, 0) - time_now;
+      if (time_next > 0) {
+        // 小于 0 时，疯狂执行。。
+        // 测试的时候会触发
+        setTimeout(() => window.location.reload(), time_next);
+      }
+    </script>
+  </body>
+</html>
