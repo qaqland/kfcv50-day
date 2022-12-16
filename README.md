@@ -1,8 +1,8 @@
-# kfcv50 day
+# KFC v50 day
 
-今天星期四吗 v50
+今天星期四吗  [`KFCv50.day`](https://kfcv50.day) 
 
-[kfcv50.day](https://kfcv50.day)
+我亲爱的群友们，真的好多次，V50，我感动了哭了出来，KFC真香
 
 > KFC 为肯德基公司商标，本项目仅为“疯狂星期四”文案衍生作品
 
@@ -27,3 +27,4 @@ kfcv50，其实就是星期四，大家可能会很惊讶 kfc 怎么会 v50 呢�
 
 - [ArchFeh](https://github.com/ArchFeh) v50
 - 某学长 v 鸡肉卷
+- [ZX Zhang](https://github.com/Taohanxu)
